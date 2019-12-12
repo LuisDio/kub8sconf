@@ -1,5 +1,5 @@
 ```
-kubectl apply -f <filename> --> feed a config file to kubectl to create a new object/ change current state
+kubectl apply -f <filename> --> feed a config file to kubectl to create a new object/ update desire state
 ```
 
 ```
