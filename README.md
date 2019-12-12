@@ -16,5 +16,6 @@ minikube ip --> List the IP of the cluster node
 
 With a Declarative approach you simply need to edit your config file and pass it to the master<br/>
 
-When you need to update a state to a certain pod, just give it the same config file with the modified parameter. However name you not be changed for the master to bring changes to the assigned pod
+When you need to update a state to a certain pod, just give it the same config file with the modified parameter.<br/>
+However the name and the type or kind must not be changed for the master to bring changes to the assigned pod or object
 # kub8sconf
