@@ -9,4 +9,9 @@ kubectl get <object-type> --> print the status of an entire group of object exam
 ```
 minikube ip --> List the IP of the cluster node
 ```
+
+2 type of deployments:<br/>
+-- Imperative deployments ==> DO exactly these steps to arrive at this container setup <br/>
+-- Declarative deployments ==> Our container setup should look like this, make it happen <br/>
+
 # kub8sconf
