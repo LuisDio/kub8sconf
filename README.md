@@ -3,7 +3,7 @@
 | ------------- | ------------- |
 | Pods  | Runs one or more closely related container  |
 | Services  | Sets up networking in a kubernetes cluster  |
-| Deployment  | Maintains a set of identical pods, ensuring they have the correct config and the right number exists  |
+| Deployment  | Maintains a set of identical pods(pod template), ensuring they have the correct config and the right number exists  |
 
 
 ```
