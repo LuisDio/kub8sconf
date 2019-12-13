@@ -18,7 +18,7 @@ kubectl get <object-type> --> print the status of an entire group of object exam
 minikube ip --> List the IP of the cluster node
 ```
 
-2 type of deployments:<br/>
+2 type of deployments:<br/><br/>
 -- Imperative deployments ==> DO exactly these steps to arrive at this container setup <br/>
 -- Declarative deployments ==> Our container setup should look like this, make it happen <br/>
 
@@ -29,5 +29,13 @@ However the name and the type or kind must not be changed for the master to brin
 
 ```
 kubectl describe <object type> <object name> --> Get detailed info about an object
+```
+
+```
+kubectl delete -f <confi-file>  --> remove a created running object
+```
+
+```
+kubectl get pods -o wide --> Give a wider range of information such as pods running and their respective internal IP
 ```
 # kub8sconf
