@@ -1,5 +1,5 @@
 
-| Object type  | Second Header |
+| Object type  | Functions |
 | ------------- | ------------- |
 | Pods  | Runs one or more closely related container  |
 | Services  | Sets up networking in a kubernetes cluster  |
