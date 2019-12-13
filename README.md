@@ -38,4 +38,16 @@ kubectl delete -f <confi-file>  --> remove a created running object
 ```
 kubectl get pods -o wide --> Give a wider range of information such as pods running and their respective internal IP
 ```
+
+Get our deployment to recreate our pods with latest version of multi-client docker<br/>
+
+If no changes were found within our config file, it would not apply.<br/>
+In the case of our docker pull the latest image, it would not apply change since there was not actionable changes<br/><br/>
+
+### Possible solution:
+
+| Solution 1: Deleting pods  | Solution 2: Adds an extra step in the production deployment process | Solution 3: Use an imperative command |
+| ------------- | ------------- |------------- |
+| Manually delete pods to get the deployment to recreate them with the latest version  | Tag built image with a real version number and specify that version in the config file  | Use an Imperative command to update the image version the deployment should |
+
 # kub8sconf
