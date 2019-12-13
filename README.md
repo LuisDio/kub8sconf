@@ -63,4 +63,17 @@ minikube docker-env --> give list of config
 eval$(minikube docker-env) --> This only reconfigure your current terminal window(temporally)
 ```
 
+| Why changing server  |
+| ------------- |
+| Use all the same debugging techniques we can do with docker CLI  |
+| Manually kill the container to test kubernetes ability to self-heal |
+| Delete cached image in the nodes |
+
+Note you can also use the same docker CLI command with kubectl
+```
+kubectl get pods --> give the info such as name
+kubectl logs <image-name>
+kubectl exec -it <image-name>
+```
+
 # kub8sconf
