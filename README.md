@@ -46,7 +46,7 @@ In the case of our docker pull the latest image, it would not apply change since
 
 ### Possible solution:
 
-| Solution 1: Deleting pods  | Solution 2: Adds an extra step in the production deployment process | Solution 3: Use an imperative command |
+| Solution 1: Deleting pods(very bad)  | Solution 2: Adds an extra step in the production deployment process(painful every single time) | Solution 3: Use an imperative command(feasible and ok) |
 | ------------- | ------------- |------------- |
 | Manually delete pods to get the deployment to recreate them with the latest version  | Tag built image with a real version number and specify that version in the config file  | Use an Imperative command to update the image version the deployment should |
 
