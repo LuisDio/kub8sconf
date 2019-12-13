@@ -50,4 +50,11 @@ In the case of our docker pull the latest image, it would not apply change since
 | ------------- | ------------- |------------- |
 | Manually delete pods to get the deployment to recreate them with the latest version  | Tag built image with a real version number and specify that version in the config file  | Use an Imperative command to update the image version the deployment should |
 
+```
+solution 3
+
+kubectl set image <object-type> / <object-name> <container-name> = <new image to use> --> Imperative command to update the image
+kubectl set image deployment/client-deployment client=multi-client:v1
+```
+
 # kub8sconf
