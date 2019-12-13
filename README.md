@@ -57,4 +57,10 @@ kubectl set image <object-type> / <object-name> <container-name> = <new image to
 kubectl set image deployment/client-deployment client=multi-client:v1
 ```
 
+### Reconfiguring local Docker CLI to talk to different docker-server
+```
+minikube docker-env --> give list of config
+eval$(minikube docker-env) --> This only reconfigure your current terminal window(temporally)
+```
+
 # kub8sconf
