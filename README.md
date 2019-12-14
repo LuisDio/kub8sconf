@@ -1,11 +1,19 @@
+### Main object type
 
 | Object type  | Functions |
 | ------------- | ------------- |
 | Pods  | Runs one or more closely related container  |
 | Services  | Sets up networking in a kubernetes cluster  |
 | Deployment  | Maintains a set of identical pods(pod template), ensuring they have the correct config and the right number exists  |
-| Services  | Sets up networking in a kubernetes cluster  |
-| Services  | Sets up networking in a kubernetes cluster  |
+| Secrets  | Securely stores a piece of information in the cluster, such as a database password  |
+
+As for Service Object, there exists 4 subtype such as:
+| Object type  | Functions |
+| ------------- | ------------- |
+| ClusterIP  | Expose a set of pods to other objects in the cluster  |
+| NodePort  | exposes a set of pods to the outside world(only good for dev purpose)  |
+| LoadBalancer  | Legacy way of getting network traffic into a cluster  |
+| Ingress  | Exposes a set of services to the outside world  |
 
 
 ```
