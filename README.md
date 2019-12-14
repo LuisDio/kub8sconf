@@ -33,6 +33,8 @@ kubectl describe <object type> <object name> --> Get detailed info about an obje
 
 ```
 kubectl delete -f <confi-file>  --> remove a created running object
+kubectl delete <object-type> <object-name>
+kubectl delete deployment client-deployment
 ```
 
 ```
