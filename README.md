@@ -82,4 +82,9 @@ kubectl logs <image-name>
 kubectl exec -it <image-name>
 ```
 
+```
+kubectl get pv --> list persistent volume 
+kubectl get pvc --> list persistent volume claim created(advertisement)
+```
+
 # kub8sconf
