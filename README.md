@@ -9,6 +9,10 @@
 ```
 kubectl apply -f <filename> --> feed a config file to kubectl to create a new object/ update desire state
 ```
+```
+kubectl apply -f <folder> --> apply confi to a group of file within a folder
+kubectl apply -f k8s
+```
 
 ```
 kubectl get <object-type> --> print the status of an entire group of object example pods
