@@ -7,7 +7,8 @@
 | Deployment  | Maintains a set of identical pods(pod template), ensuring they have the correct config and the right number exists  |
 | Secrets  | Securely stores a piece of information in the cluster, such as a database password  |
 
-As for Service Object, there exists 4 subtype such as:
+As for Service Object, there exists 4 subtype such as:<br/>
+
 | Object type  | Functions |
 | ------------- | ------------- |
 | ClusterIP  | Expose a set of pods to other objects in the cluster  |
