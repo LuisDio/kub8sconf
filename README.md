@@ -1,13 +1,28 @@
+### Main object type
 
 | Object type  | Functions |
 | ------------- | ------------- |
 | Pods  | Runs one or more closely related container  |
 | Services  | Sets up networking in a kubernetes cluster  |
 | Deployment  | Maintains a set of identical pods(pod template), ensuring they have the correct config and the right number exists  |
+| Secrets  | Securely stores a piece of information in the cluster, such as a database password  |
+
+As for Service Object, there exists 4 subtype such as:<br/>
+
+| Object type  | Functions |
+| ------------- | ------------- |
+| ClusterIP  | Expose a set of pods to other objects in the cluster  |
+| NodePort  | exposes a set of pods to the outside world(only good for dev purpose)  |
+| LoadBalancer  | Legacy way of getting network traffic into a cluster  |
+| Ingress  | Exposes a set of services to the outside world  |
 
 
 ```
 kubectl apply -f <filename> --> feed a config file to kubectl to create a new object/ update desire state
+```
+```
+kubectl apply -f <folder> --> apply confi to a group of file within a folder
+kubectl apply -f k8s
 ```
 
 ```
@@ -33,6 +48,8 @@ kubectl describe <object type> <object name> --> Get detailed info about an obje
 
 ```
 kubectl delete -f <confi-file>  --> remove a created running object
+kubectl delete <object-type> <object-name>
+kubectl delete deployment client-deployment
 ```
 
 ```
@@ -74,6 +91,11 @@ Note you can also use the same docker CLI command with kubectl
 kubectl get pods --> give the info such as name
 kubectl logs <image-name>
 kubectl exec -it <image-name>
+```
+
+```
+kubectl get pv --> list persistent volume 
+kubectl get pvc --> list persistent volume claim created(advertisement)
 ```
 
 # kub8sconf
